@@ -32,6 +32,7 @@ students=sortdown(students)
 n=1
 for i in range(500):
     if '10' in students[i][3]:
-        print(f'{n} место: {students[i][1]}')
+        surname, name, father = students[i][1].split()
+        print(f'{n} место: {name[0]}.{surname}')
         n+=1
     if n==4: break
